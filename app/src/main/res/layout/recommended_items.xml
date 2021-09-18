@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="3dp"
+    android:background="@color/teal_200"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rec_img"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            app:riv_corner_radius="14dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/product19"/>
+
+        <TextView
+            android:id="@+id/rec_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:text="@string/trending_clothing_items"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Rs."/>
+
+        <TextView
+            android:id="@+id/rec_pri"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/description"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ratingbar"
+                android:layout_marginLeft="-5dp"/>
+            <TextView
+                android:id="@+id/rec_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="40dp"
+                android:text="5.0"
+                android:layout_weight="1"
+                android:fontFamily="@font/alice"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageButton
+                android:id="@+id/add_wish"
+                android:layout_width="58dp"
+                android:background="@color/white"
+                android:layout_height="56dp"
+                android:src="@drawable/h23"
+                android:layout_marginLeft="-5dp"/>
+
+            <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="56dp"
+                android:src="@drawable/c22"
+                android:background="@color/white"
+                android:layout_marginLeft="136dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

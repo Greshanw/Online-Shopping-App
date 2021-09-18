@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Fly Buy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="store">Store</string>
+    <string name="category">Category</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Offers">offers</string>
+    <string name="Cart">Cart</string>
+    <string name="Wishlist">wishlist</string>
+    <string name="new_products">New Products</string>
+    <string name="Logout">Log Out</string>
+    <string name="navhead">My Shop</string>
+    <string name="team">#Game_of_Threads</string>
+    <string name="my_wishlist_3">My Wishlist(3)</string>
+    <string name="wishlist_pri1">Rs.15000</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="wishlist_pri2">Rs.8000</string>
+    <string name="wishlist_pri3">Rs.5000</string>
+    <string name="add_all_to_cart">Add All To Cart</string>
+    <string name="search_clothing">Search your clothing items ...</string>
+    <string name="trending_prodcuts">Trending Prodcuts</string>
+    <string name="view_all">View All</string>
+    <string name="trending_clothing_items">Trending Clothing Items</string>
+    <string name="description">description</string>
+    <string name="_5_0">5.0</string>
+    <string name="discount_20_off">Discount 20% off</string>
+    <string name="discover_categories">Discover the Categories</string>
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register_hint_name">Name</string>
+    <string name="register_hint_email">Email</string>
+    <string name="register_hint_password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcom_login">Login</string>
+    <string name="welcom_registration">Registration</string>
+    <string name="discount_5_off">discount 5% off</string>
+    <string name="discount_8_off">discount 8% off</string>
+    <string name="recommended">Recommended</string>
+    <string name="shirts">Shirts</string>
+</resources>
+

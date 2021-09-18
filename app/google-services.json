@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "23759729764",
+    "project_id": "fly-buy-4eebc",
+    "storage_bucket": "fly-buy-4eebc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23759729764:android:55a02bd1e62dfed9639b71",
+        "android_client_info": {
+          "package_name": "com.example.project_mad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23759729764-cqfnik4hoqisdaf4io1n3c3s3619irmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoIZ0ZzbvTfFVPdgUlNAxPciVxBsr8Z08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23759729764-cqfnik4hoqisdaf4io1n3c3s3619irmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

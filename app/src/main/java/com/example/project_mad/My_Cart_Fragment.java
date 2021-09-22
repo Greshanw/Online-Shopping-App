@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,7 +36,8 @@ public class My_Cart_Fragment extends Fragment {
     FirebaseFirestore db;
     FirebaseAuth auth;
     float total = 0;
-    TextView tot;
+    TextView totalPrice;
+    Button checkout;
 
     RecyclerView recyclerView;
     CartAdapter cartAdapter;
@@ -55,6 +57,8 @@ public class My_Cart_Fragment extends Fragment {
         db = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
         recyclerView = root.findViewById(R.id.recyclerview);
+        totalPrice = root.findViewById(R.id.totalPrice);
+        checkout = root.findViewById(R.id.checkout_btn);
 
         LocalBroadcastManager.getInstance(getActivity())
                 .registerReceiver(mMessageReceiver, new IntentFilter("cartTotal"));
@@ -92,8 +96,13 @@ public class My_Cart_Fragment extends Fragment {
     public BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            int counttot = intent.getIntExtra("total", 0);
-            tot.setText(String.valueOf(counttot));
+            total = intent.getFloatExtra("totPrice", 0);
+            totalPrice.setText(String.valueOf(total));
         }
     };
+
+    public void Checkout(){
+        //Intent intent = new Intent(this, categoryFragment.class);
+    }
+
 }

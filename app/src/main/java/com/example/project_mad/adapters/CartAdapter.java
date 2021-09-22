@@ -32,6 +32,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.Viewholder> {
     FirebaseFirestore firestore;
     FirebaseAuth auth;
     int count;
+    float total = 0;
 
     public CartAdapter(Context context, List<CartModel> cartModelList) {
          this.context = context;
@@ -48,6 +49,10 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.Viewholder> {
 
     @Override
     public void onBindViewHolder(@NonNull Viewholder holder, int position) {
+        float temp = 0;
+        temp = Float.parseFloat(cartModelList.get(position).getProductPrice());
+        setTotal(temp);
+
         holder.price.setText(String.valueOf(cartModelList.get(position).getProductPrice()));
         holder.itemName.setText(String.valueOf(cartModelList.get(position).getProductName()));
         holder.qty.setText(String.valueOf(cartModelList.get(position).getTotalQuantity()));
@@ -62,20 +67,25 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.Viewholder> {
                         .delete()
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
-                            public void onComplete(@NonNull Task<Void> task) {
+                            public void onComplete(@NonNull Task <Void> task) {
                                 if(task.isSuccessful()){
+                                    setTotal((-2)*Float.parseFloat(cartModelList.get(position).getProductPrice()));
+
                                     cartModelList.remove(cartModelList.get(position));
                                     notifyDataSetChanged();
                                     Toast.makeText(context, "Product removed from the Cart", Toast.LENGTH_SHORT).show();
                                 }
+
                             }
+
                         });
             }
         });
 
         count = getItemCount();
-        Intent intent = new Intent("cartlisttot");
-        intent.putExtra("totwish", count);
+        total = getTotal();
+        Intent intent = new Intent("cartTotal");
+        intent.putExtra("totPrice", total);
         LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
     }
 
@@ -99,5 +109,12 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.Viewholder> {
             qty = itemView.findViewById(R.id.qty);
             delBtn = itemView.findViewById(R.id.del_btn);
         }
+    }
+
+    public void setTotal(float total){
+        this.total += total;
+    }
+    public float getTotal(){
+        return total;
     }
 }

@@ -51,7 +51,7 @@
     <string name="cart_title">My Cart</string>
     <string name="decrease">-</string>
     <string name="increase">+</string>
-    <string name="total">Total:</string>
+    <string name="total">Total: Rs.</string>
     <string name="check_out_btn">Check Out</string>
 </resources>
 

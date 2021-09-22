@@ -37,144 +37,150 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-3dp"
+        android:layout_marginStart="28dp"
         android:text="Rs."
         android:textColor="@color/purple_200"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailed_price"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/detailed_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="price"
         android:textColor="@color/purple_200"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
-        app:layout_constraintHorizontal_bias="0.218"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_img" />
 
     <TextView
         android:id="@+id/detailed_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="236dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/alice"
         android:text="name"
         android:textColor="@color/black"
-        android:layout_marginTop="5dp"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toBottomOf="@+id/detailed_price"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="101dp"
         android:layout_height="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/ratingbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toBottomOf="@+id/detailed_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailed_name"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/detailed_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
         android:layout_weight="1"
         android:fontFamily="@font/alice"
         android:text="5.0"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/detailed_img" />
+        app:layout_constraintTop_toBottomOf="@+id/detailed_name" />
 
     <ImageButton
         android:id="@+id/wishbtn"
-        android:layout_width="45dp"
-        android:layout_height="wrap_content"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
         android:layout_gravity="end"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/heart32"
-        app:layout_constraintStart_toEndOf="@+id/detailed_rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toEndOf="@+id/detailed_price"
         app:layout_constraintTop_toBottomOf="@+id/detailed_img" />
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
         android:background="#FF9E80"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" >
-
-        <ImageView
-            android:id="@+id/add_item"
-            android:layout_width="54dp"
-            android:layout_height="54dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/addbtn" />
-
-        <TextView
-            android:id="@+id/quantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="97dp"
-            android:layout_marginTop="11dp"
-            android:text="1"
-            android:textColor="@color/black"
-            android:textSize="38dp"
-            android:textStyle="bold"/>
-
-        <ImageView
-            android:id="@+id/remove_item"
-            android:layout_width="54dp"
-            android:layout_height="54dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="135dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/minus" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/addtocart"
-            android:layout_width="160dp"
-            android:layout_height="65dp"
-            android:background="@drawable/btnstyle"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="6dp"
-            android:textSize="20sp"
-            android:layout_marginEnd="30dp"
-            android:text="Add Cart" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btnstyle"
+            android:foregroundGravity="center_vertical"
+            android:text="Add Cart"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buyNow"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/addtocart"
+            android:background="@drawable/btnstyle"
+            android:foregroundGravity="center_vertical"
+            android:text="Buy Now"
+            android:textSize="20sp" />
 
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/remove_item"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wishbtn" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/remove_item"
+        app:layout_constraintTop_toBottomOf="@+id/wishbtn" />
+
+    <ImageView
+        android:id="@+id/add_item"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/addbtn"
+        app:layout_constraintEnd_toStartOf="@+id/quantity"
+        app:layout_constraintTop_toBottomOf="@+id/wishbtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

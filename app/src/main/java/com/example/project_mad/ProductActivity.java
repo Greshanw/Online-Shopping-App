@@ -187,7 +187,7 @@ public class ProductActivity extends AppCompatActivity {
         cartMap.put("currentDate", saveCurrentDate);
         cartMap.put("currentTime", saveCurrentTime);
         cartMap.put("totalQuantity", quantity.getText().toString());
-        cartMap.put("totalPrice", totalPrice);
+        cartMap.put("productImg", viewAllModel.getImg_url());
 
         firestore.collection("AddToCart").document(auth.getCurrentUser().getUid())
                 .collection("CurrentUser").add(cartMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
@@ -197,6 +197,9 @@ public class ProductActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
 
+    public void BuyNow(){
+        //Intent intent = new Intent(this, );
     }
 }

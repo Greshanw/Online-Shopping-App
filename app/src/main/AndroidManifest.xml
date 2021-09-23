@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/myshop"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Mad">
+        <activity android:name=".Logout"></activity>
         <activity android:name=".ProductActivity" />
         <activity android:name=".welcomescreen">
             <intent-filter>
@@ -28,10 +29,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-        <meta-data
-            android:name="com.razorpay.Apikey"
-            android:value="rzp_test_nIiw7flc034F8p"/>
     </application>
 
 </manifest>

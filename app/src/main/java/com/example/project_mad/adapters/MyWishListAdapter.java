@@ -104,6 +104,7 @@ public class MyWishListAdapter  extends RecyclerView.Adapter<MyWishListAdapter.V
                 final HashMap<String, Object> cartMap = new HashMap<>();
 
                 cartMap.put("productName", wishListModelList.get(position).getProductName());
+                cartMap.put("productImg", wishListModelList.get(position).getProductImg());
                 cartMap.put("productPrice", holder.price.getText().toString());
                 cartMap.put("currentDate", saveCurrentDate);
                 cartMap.put("currentTime", saveCurrentTime);

@@ -7,7 +7,6 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.project_mad.models.PopularModel;
 import com.example.project_mad.models.ViewAllModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -35,16 +33,9 @@ public class ProductActivity extends AppCompatActivity {
     TextView price, rating, name;
     ImageView addItem, removeItem;
     Button addtoCart;
-    Button buyNow;
     TextView quantity;
     int totQ = 1;
     int totalPrice = 0;
-
-    //new products
-    NewProductModel NewProductModel = null;
-
-    //Popular products
-    PopularModel PopularModel = null;
 
     FirebaseFirestore firestore;
     FirebaseAuth auth;
@@ -85,27 +76,7 @@ public class ProductActivity extends AppCompatActivity {
             price.setText(String.valueOf(viewAllModel.getPrice()));
             name.setText(viewAllModel.getName());
 
-
         }
-        //buy Now
-        buyNow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(ProductActivity.this,AddressActivity.class);
-                if(newProductModel != null){
-                    intent.putExtra("item",newProductModel);
-                }
-
-                if(PopularModel != null) {
-                    intent.putExtra("item", PopularModel);
-                }
-
-                if(viewAllModel != null) {
-                    intent.putExtra("item", viewAllModel);
-                }
-                startActivity(intent);
-            }
-        });
 
         addtoCart = findViewById(R.id.addtocart);
         addtoCart.setOnClickListener(new View.OnClickListener() {

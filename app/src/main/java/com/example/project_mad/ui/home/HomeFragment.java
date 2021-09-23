@@ -26,7 +26,7 @@ import com.example.project_mad.R;
 import com.example.project_mad.adapters.HomeAdapter;
 import com.example.project_mad.adapters.PopularAdapters;
 import com.example.project_mad.adapters.RecommendedAdapter;
-import com.example.project_mad.databinding.FragmentHomeBinding;
+//import com.example.project_mad.databinding.FragmentHomeBinding;
 import com.example.project_mad.models.HomeCategory;
 import com.example.project_mad.models.PopularModel;
 import com.example.project_mad.models.RecommendedModel;

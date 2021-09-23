@@ -31,11 +31,5 @@
         android:label="@string/category"
         tools:layout="@layout/fragment_category" />
 
-    <fragment
-        android:id="@+id/nav_logout"
-        android:name="com.example.project_mad.categoryFragment"
-        android:label="@string/Logout"
-        tools:layout="@layout/activity_logout" />
-
 
 </navigation>

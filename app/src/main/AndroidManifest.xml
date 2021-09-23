@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/myshop"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Mad">
-        <activity android:name=".Logout"></activity>
-        <activity android:name=".ProductActivity" />
+        <activity android:name=".ProductActivity"></activity>
         <activity android:name=".welcomescreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

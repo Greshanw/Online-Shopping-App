@@ -53,5 +53,11 @@
     <string name="increase">+</string>
     <string name="total">Total: Rs.</string>
     <string name="check_out_btn">Check Out</string>
+    <string name="any_subject">subject</string>
+    <string name="testgmail_com">email</string>
+    <string name="email_address">email1</string>
+    <string name="subject">subject1</string>
+    <string name="type_your_message">message1</string>
+    <string name="sendadd">btnsend</string>
 </resources>
 

@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_add_address.xml" value="0.1" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_address.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_product.xml" value="0.264" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/address_item.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/fragment_my__cart_.xml" value="0.264" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/fragment_offers.xml" value="0.12708333333333333" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/fragment_wishlist.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/home_cat_items.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/my_cart_item.xml" value="0.536" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/my_wishlist_item.xml" value="0.25" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/menu/activity_navigationbar_drawer.xml" value="0.1" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/menu/navigationbar.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -18,5 +23,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.536" />
+      </ProjectState>
+    </option>
   </component>
 </project>

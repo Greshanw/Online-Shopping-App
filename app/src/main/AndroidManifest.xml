@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/myshop"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Mad">
-        <activity android:name=".ProductActivity"></activity>
+        <activity
+            android:name=".AddAddressActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddressActivity"
+            android:exported="true" />
+        <activity android:name=".ProductActivity" />
         <activity android:name=".welcomescreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

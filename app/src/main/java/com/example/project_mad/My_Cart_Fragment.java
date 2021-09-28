@@ -60,6 +60,15 @@ public class My_Cart_Fragment extends Fragment {
         totalPrice = root.findViewById(R.id.totalPrice);
         checkout = root.findViewById(R.id.checkout_btn);
 
+        checkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AddressActivity.class);
+                intent.putExtra("total", Float.toString(total));
+                startActivity(intent);
+            }
+        });
+
         LocalBroadcastManager.getInstance(getActivity())
                 .registerReceiver(mMessageReceiver, new IntentFilter("cartTotal"));
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView .VERTICAL,false));
@@ -100,9 +109,5 @@ public class My_Cart_Fragment extends Fragment {
             totalPrice.setText(String.valueOf(total));
         }
     };
-
-    public void Checkout(){
-        //Intent intent = new Intent(this, categoryFragment.class);
-    }
 
 }

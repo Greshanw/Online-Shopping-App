@@ -173,6 +173,7 @@ public class ProductActivity extends AppCompatActivity {
     public void BuyNow(View view){
         Intent intent = new Intent(this, AddressActivity.class);
         intent.putExtra("total", price.getText().toString());
+        System.out.println(price.getText().toString());
         startActivity(intent);
     }
 }

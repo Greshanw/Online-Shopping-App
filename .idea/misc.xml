@@ -5,8 +5,13 @@
       <map>
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_add_address.xml" value="0.1" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_address.xml" value="0.25" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_cart_my.xml" value="0.25" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_credit_card_option.xml" value="0.4" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_payment.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_product.xml" value="0.264" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/activity_total_price.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/address_item.xml" value="0.25" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/cart_my_form.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/fragment_my__cart_.xml" value="0.264" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/fragment_offers.xml" value="0.12708333333333333" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semster/Mobile Application Development (MAD)/Online-Shopping-App/app/src/main/res/layout/fragment_wishlist.xml" value="0.25" />

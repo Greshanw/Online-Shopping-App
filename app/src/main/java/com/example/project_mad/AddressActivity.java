@@ -17,6 +17,7 @@ import android.widget.Button;
 
 import com.example.project_mad.adapters.AddressAdapter;
 import com.example.project_mad.models.AddressModel;
+import com.example.project_mad.models.ViewAllModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -41,6 +42,7 @@ public class AddressActivity extends AppCompatActivity {
     Button paymentBtn;
     Toolbar toolbar;
     String mAddress="";
+    String total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +53,11 @@ public class AddressActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        Intent intenttotal = getIntent();
+        total = intenttotal.getStringExtra("total");
+
         //get Data from product activity
-        //object obj =getIntent().getSerializableExtra("item");
+        //object obj = getIntent().getSerializableExtra("item");
 
         firestore = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
@@ -83,20 +88,20 @@ public class AddressActivity extends AppCompatActivity {
         });
 
 
-//        paymentBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                double amount = 0.0;
-//
+        paymentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double amount = 0.0;
+
 //                if(obj instanceof ViewAllModel){
 //                    ViewAllModel ViewAllModel = (ViewAllModel)obj;
 //                    amount=ViewAllModel.getPrice();
 //                }
-//                Intent intent = new Intent(AddressActivity.this,PaymentActivity.class);
-//                intent.putExtra("amount",amount);
-//                startActivity(intent);
-//            }
-//        });
+                Intent intent = new Intent(AddressActivity.this, CreditCardOptionActivity.class);
+                intent.putExtra("amount",total);
+                startActivity(intent);
+            }
+        });
 
         addAddress = findViewById(R.id.add_address_btn);
 

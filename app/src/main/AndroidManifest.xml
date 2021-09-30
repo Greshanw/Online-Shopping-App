@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Mad">
         <activity
+            android:name=".PlaceOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CreditCardOptionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CartMyActivity"
+            android:exported="true" />
+        <activity
             android:name=".AddAddressActivity"
             android:exported="true" />
         <activity

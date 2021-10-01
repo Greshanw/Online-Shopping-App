@@ -26,14 +26,13 @@ public class messagelist extends AppCompatActivity {
     com.example.project_mad.MainAdapter mainadapter;
     ArrayList<com.example.project_mad.MainModel> list;
 
-    FloatingActionButton floatingActionButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_messagelist);
 
         recyclerView = findViewById(R.id.ml);
-        database = FirebaseDatabase.getInstance().getReference(  "fly buy");
+        database = FirebaseDatabase.getInstance().getReference(  "customer");
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -41,13 +40,6 @@ public class messagelist extends AppCompatActivity {
         mainadapter = new com.example.project_mad.MainAdapter(this,list);
         recyclerView.setAdapter(mainadapter);
 
-        floatingActionButton = (FloatingActionButton)findViewById(R.id.floatingActionButton);
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), com.example.project_mad.message.class));
-            }
-        });
 
         database.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")

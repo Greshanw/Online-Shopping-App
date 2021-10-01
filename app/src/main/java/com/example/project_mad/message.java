@@ -1,5 +1,6 @@
 package com.example.project_mad;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ public class message extends AppCompatActivity {
 
     EditText email,subject,message;
     Button button2;
+    Button button3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +42,14 @@ public class message extends AppCompatActivity {
            }
        });
 
+        button3 = (Button)findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(message.this,messagelist.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -50,7 +60,7 @@ public class message extends AppCompatActivity {
         map.put("subject",subject.getText().toString());
         map.put("message",message.getText().toString());
 
-        FirebaseDatabase.getInstance().getReference().child("fly buy").push()
+        FirebaseDatabase.getInstance().getReference().child("customer").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

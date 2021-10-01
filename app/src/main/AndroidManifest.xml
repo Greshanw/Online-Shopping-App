@@ -26,6 +26,8 @@
             android:name=".NavigationbarActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Project_Mad.NoActionBar" />
+        <activity android:name=".messagelist" />
+        <activity android:name=".message" />
         <activity android:name=".ViewAllActivity" />
 
         <meta-data

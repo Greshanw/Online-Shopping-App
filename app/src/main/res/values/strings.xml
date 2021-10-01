@@ -55,9 +55,20 @@
     <string name="check_out_btn">Check Out</string>
     <string name="any_subject">subject</string>
     <string name="testgmail_com">email</string>
-    <string name="email_address">email1</string>
-    <string name="subject">subject1</string>
-    <string name="type_your_message">message1</string>
     <string name="sendadd">btnsend</string>
+    <string name="ok">TODO</string>
+    <string name="message_items">Sent Messages</string>
+    <string name="message_item_type" />
+    <string name="sendmessage">send</string>
+    <string name="textm">message</string>
+    <string name="senttext">Sent</string>
+    <string name="messagehint">Type Your Message Here...</string>
+    <string name="subjecthint">Type Your Subject Here...</string>
+    <string name="emailhint">Type Your Email Here...</string>
+    <string name="messaghint">Your message..</string>
+    <string name="senthint">Your message..</string>
+    <string name="sentsubhint">Your Subject..</string>
+    <string name="sentemail">Your Email..</string>
+    <string name="deletetext">Delete</string>
 </resources>
 

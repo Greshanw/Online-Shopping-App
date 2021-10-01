@@ -45,13 +45,13 @@ public class NavigationbarActivity extends AppCompatActivity {
      });
 
 
-       // fab = (FloatingActionButton)findViewById(R.id.fab);
-       // fab.setOnClickListener(new View.OnClickListener() {
-       //     @Override
-        //    public void onClick(View view) {
-       //         startActivity(new Intent(getApplicationContext(), com.example.project_mad.messagelist.class));
-      //      }
-     //   });
+        fab = (FloatingActionButton)findViewById(R.id.fab);
+         fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), com.example.project_mad.message.class));
+           }
+       });
 
 
         DrawerLayout drawer = binding.drawerLayout;

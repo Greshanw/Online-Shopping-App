@@ -1,63 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".message">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="#E76F51"/>
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FF9800"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="126dp"
+            android:layout_height="48dp"
+            android:text="@string/senttext"
+            app:backgroundTint="@color/msgbtn"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:hint="@string/email_address"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:hint="@string/emailhint"
         android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
-        tools:ignore="TextFields">
+        app:layout_constraintBottom_toTopOf="@+id/subject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        tools:ignore="TextFields,TextContrastCheck">
 
     </EditText>
 
     <EditText
         android:id="@+id/subject"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:hint="@string/subject"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:hint="@string/subjecthint"
         android:importantForAutofill="no"
         android:inputType="text"
-        android:minHeight="48dp">
-
-    </EditText>
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="TextContrastCheck"></EditText>
 
     <EditText
         android:id="@+id/message"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_gravity="top"
-        android:layout_margin="8dp"
-        android:hint="@string/type_your_message"
+        android:layout_width="392dp"
+        android:layout_height="281dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:hint="@string/messagehint"
         android:importantForAutofill="no"
         android:inputType="textLongMessage"
-        android:textColorHint="@color/material_on_background_disabled">
-
-    </EditText>
+        android:scrollHorizontally="false"
+        android:textColorHint="@color/material_on_background_disabled"
+        android:textFontWeight="@integer/material_motion_duration_short_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject"
+        tools:ignore="TextContrastCheck"
+        tools:targetApi="p"></EditText>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/sendadd"
-        android:textColor="#212121"
-        app:backgroundTint="#E76F51" />
+
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="202dp"
+        android:text="@string/sendmessage"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/msgbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="TextContrastCheck" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="color_title">#FF9100</color>
     <color name="cart_item_bg">#FFCFC4</color>
+    <color name="messagebtntext">#212121</color>
+    <color name="btnclr" />
+    <color name="msgbtn">#FF9800</color>
+    <color name="sentbtn">#FF9800</color>
+    <color name="sentbackground">#ffbf00</color>
 </resources>

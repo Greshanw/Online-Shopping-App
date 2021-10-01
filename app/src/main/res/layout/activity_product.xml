@@ -145,6 +145,7 @@
             android:layout_toStartOf="@+id/addtocart"
             android:background="@drawable/btnstyle"
             android:foregroundGravity="center_vertical"
+            android:onClick="BuyNow"
             android:text="Buy Now"
             android:textSize="20sp" />
 

@@ -51,6 +51,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:20.0.1'
     implementation 'com.google.firebase:firebase-firestore:23.0.3'
     implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+
     //new one
     implementation "io.grpc:grpc-okhttp:1.32.2"
     testImplementation 'junit:junit:4.+'

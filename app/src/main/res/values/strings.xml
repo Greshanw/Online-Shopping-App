@@ -70,5 +70,6 @@
     <string name="sentsubhint">Your Subject..</string>
     <string name="sentemail">Your Email..</string>
     <string name="deletetext">Delete</string>
+    <string name="sent_messages1">sent Messages</string>
 </resources>
 

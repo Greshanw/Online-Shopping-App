@@ -20,9 +20,12 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="126dp"
+            android:layout_width="125dp"
             android:layout_height="48dp"
-            android:text="@string/senttext"
+            android:text="@string/sent_messages1"
+            android:textAllCaps="false"
+
+            android:textSize="12sp"
             app:backgroundTint="@color/msgbtn"
             app:iconTint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:ignore="TextContrastCheck"></EditText>
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/message"
@@ -89,7 +92,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subject"
         tools:ignore="TextContrastCheck"
-        tools:targetApi="p"></EditText>
+        tools:targetApi="p" />
 
     <Button
         android:id="@+id/button2"
@@ -99,6 +102,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="202dp"
         android:text="@string/sendmessage"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         app:backgroundTint="@color/msgbtn"
         app:layout_constraintBottom_toBottomOf="parent"

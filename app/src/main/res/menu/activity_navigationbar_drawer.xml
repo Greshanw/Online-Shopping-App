@@ -28,7 +28,7 @@
             android:icon="@drawable/wishlist"
             android:title="@string/Wishlist" />
         <item
-            android:id="@+id/nav_Logout"
+            android:id="@+id/nav_logout"
             android:icon="@drawable/logout"
             android:title="@string/Logout" />
     </group>

@@ -49,9 +49,12 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.Viewholder> {
 
     @Override
     public void onBindViewHolder(@NonNull Viewholder holder, int position) {
-        float temp = 0;
-        temp = Float.parseFloat(cartModelList.get(position).getProductPrice());
-        setTotal(temp);
+
+        int qty = Integer.parseInt(cartModelList.get(position).getTotalQuantity());
+        float tot = Float.parseFloat(cartModelList.get(position).getProductPrice()) * qty;
+
+        setTotal(tot);
+
 
         holder.price.setText(String.valueOf(cartModelList.get(position).getProductPrice()));
         holder.itemName.setText(String.valueOf(cartModelList.get(position).getProductName()));

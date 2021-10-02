@@ -71,5 +71,9 @@
     <string name="sentemail">Your Email..</string>
     <string name="deletetext">Delete</string>
     <string name="sent_messages1">sent Messages</string>
+    <string name="invalid_email">Enter a valid email.</string>
+    <string name="invalid_subject">Subject can not be empty.</string>
+    <string name="invalid_message">Message can not be empty.</string>
+    <string name="empty_email">Email can not be empty.</string>
 </resources>
 

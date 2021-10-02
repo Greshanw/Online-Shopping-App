@@ -1,3 +1,4 @@
+//message adapter
 package com.example.project_mad;
 
 import android.annotation.SuppressLint;
@@ -16,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -33,21 +35,22 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.myViewHolder> 
 
     @NonNull
     @Override
+    //implementation of view holder
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.main_item,parent,false);
 
         return new myViewHolder(v);
     }
     @Override
-    public void onBindViewHolder(@NonNull myViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull myViewHolder holder,final int position) {
 
      MainModel mainmodel =list.get(position);
      holder.email.setText(mainmodel.getEmail());
      holder.subject.setText(mainmodel.getSubject());
      holder.message.setText(mainmodel.getMessage());
 
-
-   /* holder.deletebtn.setOnClickListener(new View.OnClickListener() {
+  //message deletion implementation
+    holder.deletebtn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             AlertDialog.Builder builder = new AlertDialog.Builder(holder.email.getContext());
@@ -58,7 +61,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.myViewHolder> 
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     FirebaseDatabase.getInstance().getReference().child("customer");
-                    //.child(getRef(position).getKey()).removeValue();
+                   // .child(getRef(position).getKey()).removeValue();
                 }
             });
 
@@ -70,11 +73,12 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.myViewHolder> 
             });
             builder.show();
         }
-    });*/
+    });
 
     }
 
     @Override
+    //return items in message adapter
     public int getItemCount() {
         return list.size();
     }
@@ -87,11 +91,14 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.myViewHolder> 
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
 
+
             email = itemView.findViewById(R.id.email);
             subject =itemView.findViewById(R.id.subject);
             message = itemView.findViewById(R.id.message);
 
             deletebtn =(Button) itemView.findViewById(R.id.deletebtn);
+
+
 
         }
 

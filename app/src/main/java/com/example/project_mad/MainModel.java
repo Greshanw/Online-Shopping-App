@@ -1,3 +1,4 @@
+//message model class
 package com.example.project_mad;
 
 public class MainModel {

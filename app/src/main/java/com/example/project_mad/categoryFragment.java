@@ -35,6 +35,7 @@ import java.util.List;
  */
 public class categoryFragment extends Fragment {
 
+    //initialize variables
     RecyclerView cat_rec;
     FirebaseFirestore db;
 
@@ -48,6 +49,7 @@ public class categoryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        //assign variables
         View root = inflater.inflate(R.layout.fragment_category,container,false);
 
 
@@ -62,6 +64,7 @@ public class categoryFragment extends Fragment {
 
 
 
+        //listener
         db.collection("Category")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

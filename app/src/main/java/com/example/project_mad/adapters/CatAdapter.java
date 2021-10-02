@@ -1,3 +1,4 @@
+//category adapter class
 package com.example.project_mad.adapters;
 
 import android.content.Context;

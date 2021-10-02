@@ -1,3 +1,4 @@
+//message list view
 package com.example.project_mad;
 
 import android.annotation.SuppressLint;
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class messagelist extends AppCompatActivity {
-
+    //initialize variables
     RecyclerView recyclerView;
     DatabaseReference database;
     com.example.project_mad.MainAdapter mainadapter;
@@ -31,6 +33,7 @@ public class messagelist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_messagelist);
 
+        //assign variables
         recyclerView = findViewById(R.id.ml);
         database = FirebaseDatabase.getInstance().getReference(  "customer");
         recyclerView.setHasFixedSize(true);
@@ -41,6 +44,7 @@ public class messagelist extends AppCompatActivity {
         recyclerView.setAdapter(mainadapter);
 
 
+        //read database and to listen for changes
         database.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
             @Override

@@ -14,4 +14,5 @@
     <color name="msgbtn">#FF9800</color>
     <color name="sentbtn">#FF9800</color>
     <color name="sentbackground">#ffbf00</color>
+    <color name="sentnew">#FFE5B4</color>
 </resources>
